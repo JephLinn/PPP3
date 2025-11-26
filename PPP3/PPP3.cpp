@@ -6,17 +6,20 @@ using namespace std;
 
 int main()
 {
+	// 2.1 Input
 	//cout << "Please enter your first name (followed by 'enter'):\n";
 	//string first_name; //first_name is a variable of type string
 	//cin >> first_name; //read characters into first_name
 	//cout << "Hello, " << first_name << "!\n";
 
+	// 2.3 Input and Type
 	//cout << "Please enter your first name and age\n";
 	//string first_name = "???"; //string variable ("???" indicates "don't know the name")
 	//double age = -1; //integer variable (-1 means "don't know the age")
 	//cin >> first_name >> age; //read a string and an integer
 	//cout << "Hello, " << first_name << " (age " << age * 12 << " months old)\n";
 
+	//2.4 Operators and operators
 	/*cout << "Please enter a floating-point number: ";
 	double n = 0;
 	cin >> n;
@@ -41,15 +44,20 @@ int main()
 	//	if (first > second)
 	//		cout << first << " is alphabetically after " << second << '\n';
 
-	int number_of_words = 0;
-	string previous;  // previous word; initialized to ""
-	string current;   // current word
-	while (cin >> current) { // read a stream of words
-		number_of_words++;
-		if (previous == current)
-			cout << "word number " << number_of_words << " Repeated word : " << current << '\n';
-		previous = current;
-	}
+	// 2.5.1-2.5.3 Repeating words
+	//int number_of_words = 0;
+	//string previous;  // previous word; initialized to ""
+	//string current;   // current word
+	//while (cin >> current) { // read a stream of words
+	//	number_of_words++;
+	//	if (previous == current)
+	//		cout << "word number " << number_of_words << " Repeated word : " << current << '\n';
+	//	previous = current;
+	//}
+
+	//2.6 Names
+	string s = "Goodbye, cruel world!\n";
+	cout << s << "\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
