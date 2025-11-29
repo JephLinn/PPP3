@@ -56,8 +56,13 @@ int main()
 	//}
 
 	//2.6 Names
-	string s = "Goodbye, cruel world!\n";
-	cout << s << "\n";
+	//string s = "Goodbye, cruel world!\n";
+	//cout << s << "\n";
+
+	// 2.8 gitType Safety
+	double x; //we "forgot" to initialize: the value of x is undefined
+	double y = x; // the value of y is undefined
+	double z = x + 2.0; //the meaning of + and the value of z is undefined
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
