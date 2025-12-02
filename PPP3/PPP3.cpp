@@ -60,9 +60,20 @@ int main()
 	//cout << s << "\n";
 
 	// 2.8 gitType Safety
-	double x; //we "forgot" to initialize: the value of x is undefined
-	double y = x; // the value of y is undefined
-	double z = x + 2.0; //the meaning of + and the value of z is undefined
+	//double x; //we "forgot" to initialize: the value of x is undefined
+	//double y = x; // the value of y is undefined
+	//double z = x + 2.0; //the meaning of + and the value of z is undefined
+
+	double d = 0;
+	while (cin >> d) { //repeat the statements below as long as we type in numbers
+		int i = d;  //try to squeeze a floating-point value into an integer value
+		char c = i; //try to squeeze an integer value into a character value
+		cout << "d == " << d //the original double
+			<< ", i == " << i  // the double converted to int
+			<< ", c == " << c  //int value of char
+			<< "char(" << c << ")\n";	//the char
+
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
