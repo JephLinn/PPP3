@@ -2,11 +2,12 @@
 //
 
 #include <iostream>
+#include <stdexcept>
 using namespace std;
 
 int main()
 {
-	// 2.1 Input
+	//// 2.1 Input
 	//cout << "Please enter your first name (followed by 'enter'):\n";
 	//string first_name; //first_name is a variable of type string
 	//cin >> first_name; //read characters into first_name
@@ -64,16 +65,61 @@ int main()
 	//double y = x; // the value of y is undefined
 	//double z = x + 2.0; //the meaning of + and the value of z is undefined
 
-	double d = 0;
-	while (cin >> d) { //repeat the statements below as long as we type in numbers
-		int i = d;  //try to squeeze a floating-point value into an integer value
-		char c = i; //try to squeeze an integer value into a character value
-		cout << "d == " << d //the original double
-			<< ", i == " << i  // the double converted to int
-			<< ", c == " << c  //int value of char
-			<< "char(" << c << ")\n";	//the char
+	//double d = 0;
+	//while (cin >> d) { //repeat the statements below as long as we type in numbers
+	//	int i = d;  //try to squeeze a floating-point value into an integer value
+	//	char c = i; //try to squeeze an integer value into a character value
+	//	cout << "d == " << d //the original double
+	//		<< ", i == " << i  // the double converted to int
+	//		<< ", c == " << c  //int value of char
+	//		<< "char(" << c << ")\n";	//the char
 
+	//}
+
+	// Drill-2
+	
+	cout << "Enter the name of the person you want to write to:\n";
+	string first_name;
+	cin >> first_name;
+	cout << "Dear " << first_name << ",\n"
+			<< "\tHow are you? I am fine. I miss you.\n"
+			<< "I hope you are doing well in school.\n"
+			<< "What is your favorite subject in school?\n";
+	cout << "Please enter the name of another friend:\n";
+	string friend_name;
+	cin >> friend_name;
+	cout << "Have you seen " << friend_name << " lately?\n";
+	cout << "Enter an age:\n";
+	int age;
+	cin >> age;
+	if (age <= 0 || age >= 110)
+	{
+		runtime_error("you're kidding!");
 	}
+	else
+	{
+		cout << "I hear you just had a birthday and you are " << age << " years old.\n";
+	}
+
+	if (age < 12)
+	{
+		cout << "Next year you will be " << age + 1 << ".\n";
+	}
+	else if (age == 17)
+	{
+		cout << "Next year you will be able to vote.\n";
+	}
+	else if (age > 70)
+	{
+		cout << "I hope you are enjoying retirement.\n";
+	}
+
+	cout << "Yours sincerely,\n\n\n";
+
+	cout << "Your Name\n";
+	
+	return 0;
+	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
