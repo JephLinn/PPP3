@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <stdexcept>
+#include <vector>
 using namespace std;
 
 int main()
@@ -78,7 +79,7 @@ int main()
 
 	// Drill-2
 	
-	cout << "Enter the name of the person you want to write to:\n";
+	/*cout << "Enter the name of the person you want to write to:\n";
 	string first_name;
 	cin >> first_name;
 	cout << "Dear " << first_name << ",\n"
@@ -118,8 +119,160 @@ int main()
 
 	cout << "Your Name\n";
 	
-	return 0;
+	return 0;*/
 	
+
+	//Exercises 2
+
+	//2
+	/*cout << "Enter miles: ";
+	double miles = 0;
+	cin >> miles;
+	double km = miles * 1.609;
+	cout << miles << " miles is " << km << " kilometers.\n";*/
+
+	//3
+    /*int double = 0;
+	double char = 5
+	char j = 6455*/
+
+	//4-5
+	//cout << "Enter an floating-point number: ";
+	//double val1 = 0;
+	//cin >> val1;
+	//cout << "Enter a second floating-point number: ";
+	//double val2 = 0;
+	//cin >> val2;
+	//if (val1 < val2)
+	//	cout << "The smaller value is " << val1 << '\n';
+	//else if (val1 == val2)
+	//cout << "The values are equal.\n";	
+	//else
+	//	cout << "The smaller value is " << val2 << '\n';
+	
+	//6
+	//cout << "Enter a number: ";
+	//int n = 0;
+	//cin >> n;
+	//cout << "Enter another number: ";
+	//int m = 0;
+	//cin >> m;
+	//cout << "Enter a third number: ";
+	//int o = 0;
+	//cin >> o;
+	//if (n < m && m < o)
+	//	cout << n << "," << m << "," << o << "\n";
+	//if (m < n && n < o)
+	//	cout << m << "," << n << "," << o << "\n";
+	//
+	//if (m < o && o < n)
+	//	cout << m << "," << o << "," << n << "\n";
+	//
+	//if (n < o && o < m)
+	//	cout << n << "," << o << "," << m << "\n";
+	//
+	//if (o < m && m < n)
+	//	cout << o << "," << m << "," << n << "\n";
+	//if (o < n && n < m)
+	//	cout << o << "," << n << "," << m << "\n";
+	//7
+	/*cout << "Enter a string: ";
+	string n;
+	cin >> n;
+	cout << "Enter another string: ";
+	string m;
+	cin >> m;
+	cout << "Enter a third string: ";
+	string o;
+	cin >> o;
+	if (n < m && m < o)
+		cout << n << "," << m << "," << o << "\n";
+	if (m < n && n < o)
+		cout << m << "," << n << "," << o << "\n";
+
+	if (m < o && o < n)
+		cout << m << "," << o << "," << n << "\n";
+
+	if (n < o && o < m)
+		cout << n << "," << o << "," << m << "\n";
+
+	if (o < m && m < n)
+		cout << o << "," << m << "," << n << "\n";
+	if (o < n && n < m)
+		cout << o << "," << n << "," << m << "\n";*/
+	
+	//8
+	//cout << "Enter a number: ";
+	//int n = 0;
+	//cin >> n;
+	//if (n % 2 == 0)
+	//cout << "The value " << n << " is an even number.\n";
+	//else
+	//cout << "The value " << n << " is an odd number.\n";
+	//
+	//9
+	/*cout << "Enter a number word: ";
+	string s;
+	cin >> s;
+	if (s == "zero")
+		cout << 0  << "\n";
+	else if (s == "one")
+		cout << 1 << "\n";
+	else if (s == "two")
+		cout << 2 << "\n";
+	else if (s == "three")
+		cout << 3 << "\n";
+	else if (s == "four")
+		cout << 4 << "\n";
+	else
+		cout << "I don't know that number. \n";*/
+
+	//10
+	/*cout << "Enter an operation: ";
+	string op;
+	cin >> op;
+	cout << "Enter an operands: ";
+	double n;
+	cin >> n;
+	cout << "Enter a second operand: ";
+	double m;
+	cin >> m;
+	if (op == "+")
+		cout << n + m;
+	else if (op == "-")
+		cout << n - m;
+	else if (op == "*")
+		cout << n * m;
+	else if (op == "/")
+		cout << n / m;
+	else
+		cout << "Incorrect input.\n";*/
+
+	//11
+	/*cout << "How many pennies do you have? \n";
+	int p;
+	cin >> p;
+	cout << "How many nickels do you have? \n";
+	int n;
+	cin >> n;
+	cout << "How many dimes do you have? \n";
+	int d;
+	cin >> d;
+	cout << "How many quarters do you have? \n";
+	int q;
+	cin >> q;
+	cout << "How many half-dollars do you have? \n";
+	int h;
+	cin >> h;
+	cout << "You have " << p << "penny(ies).\n"
+		<< "You have " << n << "nickle(s).\n"
+		<< "You have " << d << "dime(s).\n"
+		<< "You have " << q << "quarter(s).\n"
+		<< "You have " << h << "half-dollars(s).\n"
+		<< "The value of all your coins is $" << (p + (n * 5) + (d * 10) + (q * 25) + (h * 50)) * .01 << ".\n";*/
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
