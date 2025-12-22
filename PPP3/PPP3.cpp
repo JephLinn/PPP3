@@ -271,7 +271,36 @@ int main()
 		<< "You have " << h << "half-dollars(s).\n"
 		<< "The value of all your coins is $" << (p + (n * 5) + (d * 10) + (q * 25) + (h * 50)) * .01 << ".\n";*/
 
+	//3.4.1.1 - 3.4.1.2 if-statements
+	constexpr double y_to_d = .0064;
+	constexpr double k_to_d = .099;
+	constexpr double p_to_d = 1.34;
+	constexpr double f_to_d = 1.26;
+	double currency = 0;
+	char unit = ' ';
+	cout << "Enter an amount followed by a unit (y, k, p, f): \n";
+	cin >> currency >> unit;
+	switch (unit)
+	{
+	case 'y':
+		cout << currency << " yen is " << currency * y_to_d << " dollars.\n";
+		break;
+	case 'k':
+		cout << currency << " krone is " << currency * k_to_d << " dollars.\n";
+		break;
 
+	case 'p':
+		cout << currency << " pounds is " << currency * p_to_d << " dollars.\n";
+		break;
+
+	case 'f':
+		cout << currency << " francs is " << currency * f_to_d << " dollars.\n";
+		break;
+
+	default:
+		cout << "Sorry, I don't know a unit called '" << unit << "'.\n";
+		break;
+	}
 
 }
 
