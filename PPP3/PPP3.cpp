@@ -6,6 +6,13 @@
 #include <vector>
 using namespace std;
 
+//square function
+int square(int i)
+{
+	return i * i;
+}
+
+
 int main()
 {
 	//// 2.1 Input
@@ -272,7 +279,7 @@ int main()
 		<< "The value of all your coins is $" << (p + (n * 5) + (d * 10) + (q * 25) + (h * 50)) * .01 << ".\n";*/
 
 	//3.4.1.1 - 3.4.1.2 if-statements
-	constexpr double y_to_d = .0064;
+	/*constexpr double y_to_d = .0064;
 	constexpr double k_to_d = .099;
 	constexpr double p_to_d = 1.34;
 	constexpr double f_to_d = 1.26;
@@ -300,7 +307,16 @@ int main()
 	default:
 		cout << "Sorry, I don't know a unit called '" << unit << "'.\n";
 		break;
+	}*/
+
+	//3.4.2 Iteration
+	int i = 0;
+	while (i < 100)
+	{
+		cout << i << "\t" << square(i) << "\n";
+		i++;
 	}
+
 
 }
 
