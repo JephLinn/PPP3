@@ -310,13 +310,26 @@ int main()
 	}*/
 
 	//3.4.2 Iteration
-	int i = 0;
+	/*int i = 0;
 	while (i < 100)
 	{
 		cout << i << "\t" << square(i) << "\n";
 		i++;
-	}
+	}*/
 
+	//3.4.2.1
+	//char i = 'a';
+	//while (i <= 'z')
+	//{
+	//	cout << i << "\t" << int(i) << "\n";
+	//	i++;
+	//}
+
+	//3.4.2.2
+	for (char i = 'A'; i <= 'z'; ++i)
+	{
+		cout << i << "\t" << int(i) << "\n";
+	}
 
 }
 
