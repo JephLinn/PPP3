@@ -326,10 +326,26 @@ int main()
 	//}
 
 	//3.4.2.2
-	for (char i = 'A'; i <= 'z'; ++i)
-	{
-		cout << i << "\t" << int(i) << "\n";
-	}
+	//for (char i = 'A'; i <= 'z'; ++i)
+	//{
+	//	cout << i << "\t" << int(i) << "\n";
+	//}
+
+	//3.6.1 - 3.6.2 Vectors
+	//vector<int> v = {5,7,9,4,6,8};
+	////for (int i = 0; i < v.size(); ++i)
+	////{
+	////	cout << v[i] << "\t" << square(v[i]) << "\n";
+	////}
+	//for (int x : v) // for each x in v
+	//{
+	//	cout << x << "\t" << square(x) << "\n";
+	//}
+	vector<double> v;
+	v.push_back(2.7);
+	v.push_back(5.6);
+	cout << "The first element of v is " << v[0] << "\n";
+
 
 }
 
