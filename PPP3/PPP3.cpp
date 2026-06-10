@@ -4,6 +4,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 //square function
@@ -341,10 +342,26 @@ int main()
 	//{
 	//	cout << x << "\t" << square(x) << "\n";
 	//}
-	vector<double> v;
-	v.push_back(2.7);
-	v.push_back(5.6);
-	cout << "The first element of v is " << v[0] << "\n";
+	//vector<double> v;
+	//v.push_back(2.7);
+	//v.push_back(5.6);
+	//cout << "The first element of v is " << v[0] << "\n";
+
+//3.6.3 A numeric example
+// compute mean and median temperatures
+vector<double> temps;
+for (double temp; cin >> temp;)
+temps.push_back(temp);
+
+//comute mean temperature
+double sum = 0;
+for (double x : temps)
+sum += x;
+cout << "Average temperature: " << sum / temps.size() << "\n";
+
+//compute median temperature
+ranges::sort(temps);
+cout << "Median temperature: " << temps[temps.size() / 2] << "\n";
 
 
 }
